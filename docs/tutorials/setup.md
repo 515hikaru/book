@@ -23,7 +23,7 @@ brew install node@16
 インストールが完了したらシェルの環境変数`PATH`にNode.jsのパスを追加します。
 
 ```shell
-echo 'export PATH="/usr/local/opt/node@16/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$(brew --prefix)/opt/node@16/bin:$PATH"' >> ~/.zshrc
 ```
 
 パスを追加したらターミナルを再起動し、環境変数を反映させてください。
